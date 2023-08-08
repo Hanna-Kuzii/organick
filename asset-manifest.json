@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/organick/static/css/main.073c9b0a.css",
+    "main.js": "/organick/static/js/main.f5cc35b5.js",
+    "static/js/787.258b3cdc.chunk.js": "/organick/static/js/787.258b3cdc.chunk.js",
+    "static/media/logo.svg": "/organick/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/organick/index.html",
+    "main.073c9b0a.css.map": "/organick/static/css/main.073c9b0a.css.map",
+    "main.f5cc35b5.js.map": "/organick/static/js/main.f5cc35b5.js.map",
+    "787.258b3cdc.chunk.js.map": "/organick/static/js/787.258b3cdc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f5cc35b5.js"
+  ]
+}
