@@ -10,6 +10,22 @@ const fetchSomeData = async () => {
   }
 };
 
-console.log('Hello from app.js!');
+const fs = require('fs')
+
+fs.open('1.txt', 'r', function (err, file) {
+    console.log('IO')
+})
+
+setImmediate(function () {
+    console.log('setImmediate')
+})
+
+setTimeout(function () {
+    console.log('setTimeout')
+}, 0)
+
+process.nextTick(function () {
+    console.log('nextTick')
+})
 
 module.exports = { fetchSomeData };

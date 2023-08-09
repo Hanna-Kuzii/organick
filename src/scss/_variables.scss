@@ -1,0 +1,74 @@
+$dark-blue: #274C5B;
+$light-green: #7EB693;
+$yellow: #EFD372;
+$dark-grey: #525C60;
+$grey: #D4D4D4;
+$light-grey: #EFF6F1;
+$white: #F9F8F8;
+
+$roboto: 'Roboto', 'Open Sans', 'Lato', 'Montserat', sans-serif;
+$open-sans: 'Open Sans', 'Lato', 'Source Sans Pro', 'Montserat', sans-serif;
+
+@mixin heading($font) {
+  color: $dark-blue;
+  font-family: $roboto;
+  font-weight: 800;
+  font-size: #{$font * 10}px;
+}
+
+.textH1 {
+  @include heading(7);
+}
+
+.textH2 {
+  @include heading(5);
+}
+.textH3 {
+  @include heading(4);
+}
+.textH4 {
+  @include heading(3.5);
+}
+.textH5 {
+  @include heading(3);
+}
+.textH6 {
+  @include heading(2.5);
+}
+
+.paragraph {
+  font-family: $open-sans;
+  color: $dark-grey;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+
+.quotes {
+  font-family: $open-sans;
+  color: $dark-blue;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 165%;
+  text-align: center;
+}
+
+.default_button {
+  padding: 28px 39px;
+  background-color: $dark-blue;
+  font-family: $roboto;
+  color: $white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+
+  &:hover {
+    background-color: $yellow;
+    color: $dark-blue;
+  }
+
+  &:focus, &:active {
+    background-color: $white;
+    color: $dark-blue;
+  } 
+}
