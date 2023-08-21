@@ -1,0 +1,93 @@
+// @import "../../../scss/variables";
+
+.aboutus {
+  height: 1067px;
+  padding-right: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url(../../../images/aboutus__background.svg), $white;
+  background-repeat: no-repeat;
+  background-position: 9vw center;
+
+  &__content {
+    width: 40%;
+  }
+
+  &__info {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__options {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.option {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  gap: 10px 20px;
+  grid-template-areas:
+    "option__image option__title"
+    "option__image option__text";
+
+  &__image {
+    grid-area: option__image;
+  }
+
+  &__title {
+    grid-area: option__title;
+  }
+
+  &__text {
+    grid-area: option__text;
+  }
+}
+
+
+@media (max-width: 1681px) {
+  .aboutus {
+    padding-right: 10vw;
+    background-position: left center;
+  }
+}
+
+@media (max-width: 1441px) {
+  .aboutus {
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 1281px) {
+  .aboutus {
+    padding-right: 2vw;
+    background-position: -30% center;
+  }
+}
+
+@media (max-width: 1281px) {
+  .aboutus {
+    background-position: -20 center;
+  }
+}
+@media (max-width: 1281px) {
+  .aboutus {
+    background-position: -200% center;
+  }
+}
+
+@media (max-width: 769px) {
+  .aboutus {
+    background: $white;
+    &__content {
+      width: 90%;
+    }
+  }
+}

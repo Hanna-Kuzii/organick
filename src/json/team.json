@@ -1,0 +1,36 @@
+[
+  {
+    "id": 8493859,
+    "photo": "GiovaniBacardo.png",
+    "name": "Giovani Bacardo",
+    "position": "Farmer",
+    "links": {
+      "instagram": "",
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://www.twitter.com"
+    }
+  },
+  {
+    "id": 8491859,
+    "photo": "MarianneLoreno.png",
+    "name": "Marianne Loreno",
+    "position": "Designer",
+    "links": {
+      "instagram": "https://www.instagram.com/",
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://www.twitter.com"
+    }
+  },
+  {
+    "id": 8793859,
+    "photo": "RigaPelore.png",
+    "name": "Riga Pelore",
+    "position": "Farmer",
+    "links": {
+      "instagram": "https://www.instagram.com/",
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://www.twitter.com"
+    }
+  }
+
+]

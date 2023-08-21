@@ -1,0 +1,10 @@
+.shop {
+  &__header {
+    background-image: url(../../images/pages/shop/background_pattern.svg), url(../../images/pages/shop/background__image_left.svg), url(../../images/pages/shop/background__image_right.svg);
+    background-position: center, top left, top right;
+  }
+
+  &__products{
+    padding: 0 13vw;
+  }
+}

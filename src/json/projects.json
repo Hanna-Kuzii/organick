@@ -1,0 +1,38 @@
+[
+  {
+    "id": 123456,
+    "name": "Green & Tasty Lemon",
+    "categories": "Fruits",
+    "image": "lemons.svg"
+  },
+  {
+    "id": 173456,
+    "name": "Organic Carrot",
+    "categories": "Farmer",
+    "image": "carrots.svg"
+  },
+  {
+    "id": 123416,
+    "name": "Organic Betel Leaf",
+    "categories": "Leaf",
+    "image": "leafs.svg"
+  },
+  {
+    "id": 103456,
+    "name": "Natural Tommato",
+    "categories": "Fruits",
+    "image": "tomatos.svg"
+  },
+  {
+    "id": 123456,
+    "name": "Black Raspberry",
+    "categories": "Farmer",
+    "image": "blackberries.svg"
+  },
+  {
+    "id": 123456,
+    "name": "Honey Orange",
+    "categories": "Farmer",
+    "image": "halfLemons.svg"
+  }
+]

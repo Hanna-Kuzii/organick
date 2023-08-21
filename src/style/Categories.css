@@ -1,0 +1,21 @@
+.categories {
+  text-align: center;
+}
+.categories__titles {
+  margin-bottom: 40px;
+}
+.categories__products {
+  padding: 0 13vw;
+}
+.categories__button {
+  margin: 80px auto 0;
+}
+.categories__button_hide {
+  display: none;
+}
+
+@media (max-width: 1681px) {
+  .categories__products {
+    padding: 0 8vw;
+  }
+}/*# sourceMappingURL=Categories.css.map */

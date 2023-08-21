@@ -1,0 +1,25 @@
+.not-found {
+  height: 900px;
+  padding: 8% 0 8% 60%;
+  background-image: url(../../images/pages/pageNotFound/pageNotFound__background.svg);
+  background-repeat: no-repeat;
+
+  &__content {
+    width: 70%;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  &__number {
+    color: #8fa8a8;
+    font-size: 300px;
+  }
+
+  &__button {
+    margin-top: 50px;
+    width: 275px;
+  }
+}

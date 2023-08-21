@@ -1,0 +1,95 @@
+// @import '../../../scss/variables';
+
+.banner {
+  padding-left: 14vw;
+  height: 898px;
+  background: url(../../../images/banner__background.svg), url(../../../images/banner__image.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  &__content {
+    padding-top: 15%;
+    max-width: 530px;
+    width: 55%;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}
+
+.offer-banner {
+  margin: 10px 10px 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+
+  &__item {
+    padding-left: 55px;
+    height: 367px;
+    max-width: 682px;
+    width: fill-available;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &_natural {
+      background-image: url(../../../images/offer-banner__natural.svg);
+      & > * > * {
+        color: $white;
+      }
+    }
+
+    &_offer {
+      background-image: url(../../../images/offer-banner__offer.svg);
+    }
+  }
+
+  &__content {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 769px) {
+  .offer-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 481px) {
+  .banner {
+    height: auto;
+    padding-left: 10vw;
+    padding-bottom: 20vh;
+    &__content {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .banner {
+    &__title {
+      font-size: 60px;
+    }
+  }
+
+  .offer-banner {
+    &__item {
+      padding-left: 10vw;
+    }
+    &__content {
+      width: 80%;
+    }
+  }
+}

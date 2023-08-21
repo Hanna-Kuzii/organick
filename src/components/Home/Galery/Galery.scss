@@ -1,0 +1,55 @@
+.galery {
+  padding: 15vh 0;
+  background-color: #f1f8f4;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-height: 580px;
+    height: 47vh;
+    max-width: 615px;
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_organic-juice {
+      background-image: url(../../../images/galery__organic-juice.svg);
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+    &_organic-food {
+      background-image: url(../../../images/galery__organic-food.svg);
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+    &_nuts-cookies {
+      background-image: url(../../../images/galery__nuts-cookies.svg);
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+  }
+
+  &__button {
+    border: none;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .galery {
+    &__content {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+}

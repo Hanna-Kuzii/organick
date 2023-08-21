@@ -1,3 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700;900&display=swap');
-@import './_reset.scss';
-@import './variables';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Flex:opsz,wght@8..144,800&family=Roboto:wght@400;500;700;900&family=Yellowtail&display=swap");
+@import "./_reset.scss";
+@import "./_variables.scss";
+
+@import "../components/Header/Header.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Products/Products.scss";
+@import "../components/Product/Product.scss";
+@import "../components/Posts/Posts.scss";
+
+@import "../pages/Cart/Cart.scss";
+@import "../pages/OrderEnd/OrderEnd.scss";
+
+@import "../pages/PageNotFound/PageNotFound.scss";
+
+@import "../pages/Home/Home.scss";
+@import "../pages/AboutUs/AboutUsPage.scss";
+@import "../pages/Shop/Shop.scss";
+@import "../pages/News/News.scss";
+@import "../pages/Services/Services.scss";
+@import "../pages/Quality/Quality.scss";
+@import "../pages/Projects/Projects.scss";
+
+
+@import "../components/Subscribe/Subscribe.scss";
+

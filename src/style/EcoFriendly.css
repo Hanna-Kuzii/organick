@@ -1,0 +1,73 @@
+.ecofriendly {
+  position: relative;
+  height: 930px;
+  background-image: url(../../../images/ecofriendly__background.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.ecofriendly__content {
+  position: relative;
+  top: 100px;
+  left: 45%;
+  padding: 80px 90px;
+  width: 45%;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.ecofriendly__titles {
+  margin-bottom: 35px;
+  padding-right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.ecofriendly__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+}
+.ecofriendly__name {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1441px) {
+  .ecofriendly__content {
+    left: 55%;
+    top: 5%;
+  }
+}
+@media (max-width: 1281px) {
+  .ecofriendly__content {
+    width: 50%;
+    left: 50%;
+  }
+}
+@media (max-width: 1025px) {
+  .ecofriendly__content {
+    width: 60%;
+    left: 40%;
+  }
+}
+@media (max-width: 769px) {
+  .ecofriendly__content {
+    width: 90%;
+    top: 5%;
+    left: 5%;
+  }
+}
+@media (max-width: 481px) {
+  .ecofriendly__content {
+    padding: 15px;
+    top: 2%;
+  }
+}/*# sourceMappingURL=EcoFriendly.css.map */

@@ -1,0 +1,68 @@
+.posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.post {
+  position: relative;
+  margin-bottom: 100px;
+  width: 675px;
+
+  &__picture {
+    position: relative;
+  }
+
+  &__image {
+    max-width: 677px;
+    width: fill-available;
+    border-radius: 30px;
+  }
+
+  &__date {
+    position: absolute;
+    top: 45px;
+    left: 35px;
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    position: absolute;
+    padding: 46px 57px 60px;
+    bottom: -65px;
+    left: 35px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 20px 35px rgba(167, 167, 167, 0.25);
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__authour {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+  }
+
+  &__button {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

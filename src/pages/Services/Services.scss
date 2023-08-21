@@ -1,0 +1,109 @@
+.services {
+  &__header {
+    margin: 0;
+    background-image: url(../../images/pages/services/background__pattern.svg),
+      url(../../images/pages/services/background__image.svg);
+    background-position: center;
+  }
+
+  &__grow {
+    padding: 10vh 13vw 15vh;
+  }
+}
+
+.grow {
+  background-color: $white;
+  &__titles {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #fff4cd;
+      z-index: 0;
+    }
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &_left {
+      text-align: right;
+    }
+
+    &_right {
+      .grow__icon {
+        &::after {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__point {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__pic {
+    position: relative;
+    width: 46px;
+    z-index: 1;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+}
+
+.organic {
+  height: 1070px;
+  padding-top: 10%;
+  background-image: url(../../images/pages/services/organic.svg);
+  background-repeat: no-repeat;
+
+  &__text {
+    width: 50%;
+    text-align: center;
+  }
+
+  &__button {
+    position: relative;
+    width: 107px;
+    height: 107px;
+    background-color: $light-green;
+    border-radius: 50%;
+    border: none;
+    box-shadow: -4px 10px 12px #DBD1B5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      background: #fff;
+      border-radius: 0 0 0 0.25em;
+      width: 22px;
+      height: 24px;
+
+      clip-path: polygon(0 0, 100% 50%, 0 100%)
+    }
+  }
+}

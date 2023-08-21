@@ -1,17 +1,19 @@
-$dark-blue: #274C5B;
-$light-green: #7EB693;
-$yellow: #EFD372;
-$dark-grey: #525C60;
-$grey: #D4D4D4;
-$light-grey: #EFF6F1;
-$white: #F9F8F8;
+$dark-blue: #274c5b;
+$green: #68a47f;
+$light-green: #7eb693;
+$yellow: #efd372;
+$dark-grey: #525c60;
+$grey: #d4d4d4;
+$light-grey: #eff6f1;
+$white: #f9f8f8;
 
-$roboto: 'Roboto', 'Open Sans', 'Lato', 'Montserat', sans-serif;
-$open-sans: 'Open Sans', 'Lato', 'Source Sans Pro', 'Montserat', sans-serif;
+$roboto: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+$roboto-flex: "Roboto Flex", "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+$open-sans: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
 
 @mixin heading($font) {
   color: $dark-blue;
-  font-family: $roboto;
+  font-family: $roboto-flex;
   font-weight: 800;
   font-size: #{$font * 10}px;
 }
@@ -19,7 +21,6 @@ $open-sans: 'Open Sans', 'Lato', 'Source Sans Pro', 'Montserat', sans-serif;
 .textH1 {
   @include heading(7);
 }
-
 .textH2 {
   @include heading(5);
 }
@@ -34,6 +35,34 @@ $open-sans: 'Open Sans', 'Lato', 'Source Sans Pro', 'Montserat', sans-serif;
 }
 .textH6 {
   @include heading(2.5);
+}
+
+.headerText  {
+  margin-bottom: 100px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 481px) {
+    & {
+      font-size: 60px;
+    }
+  }
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.italic {
+  color: $green;
+  font-family: "Yellowtail", "Satisfy", "Pacifico", cursive;
+  font-size: 36px;
 }
 
 .paragraph {
@@ -53,22 +82,63 @@ $open-sans: 'Open Sans', 'Lato', 'Source Sans Pro', 'Montserat', sans-serif;
   text-align: center;
 }
 
-.default_button {
-  padding: 28px 39px;
-  background-color: $dark-blue;
+.default-button {
+  position: relative;
+  width: 220px;
+  height: 80px;
   font-family: $roboto;
-  color: $white;
+  border: none;
+  border-radius: 16px;
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
+  cursor: pointer;
+  // text-align: center;
 
-  &:hover {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: url(../images/arrow.png), #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &_white {
+    background-color: $white;
+    border: solid 1px $dark-blue;
+    color: $dark-blue;
+  }
+
+  &_yellow {
     background-color: $yellow;
     color: $dark-blue;
   }
 
-  &:focus, &:active {
-    background-color: $white;
-    color: $dark-blue;
-  } 
+  &_dark {
+    background-color: $dark-blue;
+    color: $white;
+
+    &:active {
+      background-color: $yellow;
+      color: $dark-blue;
+    }
+    &_active {
+      background-color: $white;
+      color: $dark-blue;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  // &:focus, &:active {
+  //   background-color: $white;
+  //   border: $dark-blue solid 1px;
+  //   color: $dark-blue;
+  // }
 }

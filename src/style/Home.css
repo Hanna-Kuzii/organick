@@ -1,0 +1,178 @@
+.textH1 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.textH2 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.textH3 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.textH4 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.textH5 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.textH6 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.paragraph {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #525c60;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+
+.quotes {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #274c5b;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 165%;
+  text-align: center;
+}
+
+.default-button {
+  padding: 28px 39px;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.default-button_white {
+  background-color: #f9f8f8;
+  border: solid 1px #274c5b;
+}
+.default-button_yellow {
+  background-color: #efd372;
+  color: #274c5b;
+}
+.default-button_dark {
+  background-color: #274c5b;
+  color: #f9f8f8;
+}
+
+.banner {
+  height: 898px;
+  background: url(../../../images/banner__background.svg), url(../../../images/banner__image.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.offer-banner__item {
+  height: 367px;
+  background-repeat: no-repeat;
+}
+.offer-banner__item_natural {
+  background-image: url(../../../images/offer-banner__natural.svg);
+}
+.offer-banner__item_offer {
+  background-image: url(../../../images/offer-banner__offer.svg);
+}
+
+.aboutus {
+  background: url(../../../images/aboutus__background.svg), #f9f8f8;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  height: 1267px;
+  background: #FCFCFC;
+  z-index: -2;
+}
+.testimonials > * {
+  z-index: 2;
+}
+.testimonials:before {
+  content: "";
+  position: absolute;
+  height: 1267px;
+  width: 450px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.testimonials::after {
+  content: "";
+  position: absolute;
+  height: 1267px;
+  width: 450px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+}
+
+.offer {
+  background-color: #274c5b;
+}
+
+.ecofriendly {
+  height: 930px;
+  background-image: url(../../../images/ecofriendly__background.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.galery {
+  background-color: #F1F8F4;
+}
+.galery__item_organic-juice {
+  background-image: url(../../../images/galery__organic-juice.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.galery__item_organic-food {
+  background-image: url(../../../images/galery__organic-food.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.galery__item_nuts-cookies {
+  background-image: url(../../../images/galery__nuts-cookies.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.post__picture_vitaminD {
+  background-image: url(../../../images/blog__vitaminD.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.post__picture_tommeto {
+  background-image: url(../../../images/blog__tommeto.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=Home.css.map */

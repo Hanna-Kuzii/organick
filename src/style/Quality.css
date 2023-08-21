@@ -1,0 +1,35 @@
+.quality__header {
+  background-image: url(../../images/pages/quality/background__pattern.svg), url(../../images/pages/quality/background__image.svg);
+}
+.quality__picture {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.store-services {
+  padding: 10px 26vw;
+}
+.store-services__header {
+  margin-bottom: 25px;
+}
+.store-services__description {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.store-services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}/*# sourceMappingURL=Quality.css.map */

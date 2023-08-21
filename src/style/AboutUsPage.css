@@ -1,0 +1,76 @@
+.about-us-page__header {
+  height: 450px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../images/pages/aboutUsPage/aboutUsPage__background.svg);
+  background-repeat: no-repeat;
+}
+
+.main-info {
+  padding: 25px 10vw 10px 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-info__picture {
+  width: 50%;
+}
+.main-info__content {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.main-info__text :first-child {
+  margin-bottom: 25px;
+}
+.main-info__points {
+  margin: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-info__point {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.main-info__icon {
+  position: relative;
+}
+.main-info__icon::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFF4CD;
+  z-index: 10;
+}
+
+.whyus {
+  padding: 10vh 15vw;
+}/*# sourceMappingURL=AboutUsPage.css.map */

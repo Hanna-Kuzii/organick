@@ -1,0 +1,62 @@
+.galery {
+  padding: 15vh 0;
+  background-color: #f1f8f4;
+}
+.galery__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.galery__item {
+  max-height: 580px;
+  height: 47vh;
+  max-width: 615px;
+  width: 33vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.galery__item_organic-juice {
+  background-image: url(../../../images/galery__organic-juice.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.galery__item_organic-food {
+  background-image: url(../../../images/galery__organic-food.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.galery__item_nuts-cookies {
+  background-image: url(../../../images/galery__nuts-cookies.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.galery__button {
+  border: none;
+}
+.galery__button::after {
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 768px) {
+  .galery__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .galery__item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Galery.css.map */

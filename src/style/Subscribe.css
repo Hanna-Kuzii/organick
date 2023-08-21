@@ -1,0 +1,114 @@
+.subscribe {
+  position: relative;
+  margin: 15vh 13vw 5vh 13vw;
+  padding: 110px 70px;
+  max-height: 323px;
+  max-width: 1400px;
+  background-image: url(../../images/subscribe__background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.subscribe__title {
+  width: 35%;
+  color: #fff;
+}
+.subscribe__form {
+  max-width: 50vw;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.subscribe__input {
+  max-width: 350px;
+  width: 50vw;
+  height: 80px;
+  padding-left: 25px;
+  margin: 0 5px 5px 0;
+  border-radius: 16px;
+  border: none;
+  font-style: italic;
+  color: #ababab;
+}
+.subscribe__button {
+  color: #fff;
+}
+.subscribe__button::after {
+  width: 0;
+  height: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.91);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1441px) {
+  .subscribe {
+    margin: 15vh 10vw 5vh 10vw;
+  }
+}
+@media (max-width: 769px) {
+  .subscribe {
+    padding: 5% 5%;
+  }
+  .subscribe__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .subscribe__title {
+    width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .subscribe {
+    padding: 10% 2%;
+    margin: 1%;
+    width: 98%;
+  }
+  .subscribe__input, .subscribe__button {
+    height: 60px;
+  }
+}/*# sourceMappingURL=Subscribe.css.map */

@@ -1,0 +1,89 @@
+.ecofriendly {
+  position: relative;
+  height: 930px;
+  background-image: url(../../../images/ecofriendly__background.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &__content {
+    position: relative;
+    top: 100px;
+    left: 45%;
+    padding: 80px 90px;
+    width: 45%;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
+  &__titles {
+    margin-bottom: 35px;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1441px) {
+  .ecofriendly {
+    &__content {
+      left: 55%;
+      top: 5%;
+    }
+  }
+}
+
+@media (max-width: 1281px) {
+  .ecofriendly {
+    &__content {
+      width: 50%;
+      left: 50%;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .ecofriendly {
+    &__content {
+      width: 60%;
+      left: 40%;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .ecofriendly {
+    &__content {
+      width: 90%;
+      top: 5%;
+      left: 5%;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .ecofriendly {
+    &__content {
+      padding: 15px;
+      top: 2%;
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .ecofriendly {
+    height: auto;
+    padding: 7% 2%;
+    background: $white;
+  }
+}
+

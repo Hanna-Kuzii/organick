@@ -1,0 +1,28 @@
+.not-found {
+  height: 900px;
+  padding: 8% 0 8% 60%;
+  background-image: url(../../images/pages/pageNotFound/pageNotFound__background.svg);
+  background-repeat: no-repeat;
+}
+.not-found__content {
+  width: 70%;
+}
+.not-found__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.not-found__number {
+  color: #8fa8a8;
+  font-size: 300px;
+}
+.not-found__button {
+  margin-top: 50px;
+  width: 275px;
+}/*# sourceMappingURL=PageNotFound.css.map */

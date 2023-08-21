@@ -1,0 +1,25 @@
+// @import '../../scss/variables';
+
+@import '../../components/Home/Banner/Banner.scss';
+@import '../../components/Home/AboutUs/AboutUs.scss';
+@import '../../components/Home/Categories/Categories.scss';
+@import '../../components/Home/Testimonials/Testimonials.scss';
+@import '../../components/Home/Offer/Offer.scss';
+@import '../../components/Home/EcoFriendly/EcoFriendly.scss';
+@import '../../components/Home/Galery/Galery.scss';
+@import '../../components/Home/Blog/Blog.scss';
+
+.home {
+
+  &__categories {
+    margin-top: 10vh;
+  }
+
+  &__testimonials {
+    margin-top: 15vh;
+  }
+
+  &__blog {
+    margin-top: 15vh;
+  }
+}

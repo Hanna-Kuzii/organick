@@ -1,0 +1,236 @@
+.textH1 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.textH2 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.textH3 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.textH4 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.textH5 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.textH6 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.italic {
+  color: #68A47F;
+  font-family: "Yellowtail", "Satisfy", "Pacifico", cursive;
+  font-size: 36px;
+}
+
+.paragraph {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #525c60;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+
+.quotes {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #274c5b;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 165%;
+  text-align: center;
+}
+
+.default-button {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.default-button::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../images/arrow.png), #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.default-button_white {
+  background-color: #f9f8f8;
+  border: solid 1px #274c5b;
+}
+.default-button_yellow {
+  background-color: #efd372;
+  color: #274c5b;
+}
+.default-button_dark {
+  background-color: #274c5b;
+  color: #f9f8f8;
+}
+
+.circle {
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.header {
+  padding: 7vh 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.logo__title {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.navigation__list {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3vw;
+}
+.navigation__item {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.search {
+  position: relative;
+  height: 66px;
+  max-width: 376px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 36px;
+}
+.search:hover .search__input {
+  padding-left: 20px;
+  width: 376px;
+  background-color: #fafafa;
+}
+.search:hover .search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.search__input {
+  width: 0;
+  border: none;
+  border-radius: 36px;
+  -webkit-transition: 0.45s;
+  transition: 0.45s;
+}
+.search__input::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+.search__input::-moz-placeholder {
+  opacity: 0.6;
+}
+.search__input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.search__input::-ms-input-placeholder {
+  opacity: 0.6;
+}
+.search__input::placeholder {
+  opacity: 0.6;
+}
+.search__button {
+  margin: 5px;
+  border: none;
+  background-color: #7eb693;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search__button:active {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+.search__icon {
+  height: 24px;
+}
+
+.cart {
+  padding: 5px 20px 5px 6px;
+  border: #e0e0e0 solid 1px;
+  border-radius: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cart__image {
+  background-color: #274c5b;
+}
+.cart__icon {
+  width: 24px;
+  height: 22px;
+}
+.cart__title {
+  font-weight: 700;
+  font-size: 18px;
+}/*# sourceMappingURL=Header.css.map */

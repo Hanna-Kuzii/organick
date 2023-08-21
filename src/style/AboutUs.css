@@ -1,0 +1,160 @@
+.textH1 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.textH2 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.textH3 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.textH4 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.textH5 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.textH6 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.italic {
+  color: #68A47F;
+  font-family: "Yellowtail", "Satisfy", "Pacifico", cursive;
+  font-size: 36px;
+}
+
+.paragraph {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #525c60;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+
+.quotes {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #274c5b;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 165%;
+  text-align: center;
+}
+
+.default-button {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.default-button::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../images/arrow.png), #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.default-button_white {
+  background-color: #f9f8f8;
+  border: solid 1px #274c5b;
+}
+.default-button_yellow {
+  background-color: #efd372;
+  color: #274c5b;
+}
+.default-button_dark {
+  background-color: #274c5b;
+  color: #f9f8f8;
+}
+
+.aboutus {
+  height: 1067px;
+  padding-right: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url(../../../images/aboutus__background.svg), #f9f8f8;
+  background-repeat: no-repeat;
+  background-position: 9vw center;
+}
+.aboutus__content {
+  width: 40%;
+}
+.aboutus__info {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.aboutus__options {
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  gap: 10px 20px;
+  grid-template-areas: "option__image option__title" "option__image option__text";
+}
+.option__image {
+  grid-area: option__image;
+}
+.option__title {
+  grid-area: option__title;
+}
+.option__text {
+  grid-area: option__text;
+}/*# sourceMappingURL=AboutUs.css.map */

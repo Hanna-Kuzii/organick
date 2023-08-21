@@ -1,0 +1,186 @@
+.textH1 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.textH2 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.textH3 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.textH4 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.textH5 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.textH6 {
+  color: #274c5b;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.italic {
+  color: #68A47F;
+  font-family: "Yellowtail", "Satisfy", "Pacifico", cursive;
+  font-size: 36px;
+}
+
+.paragraph {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #525c60;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+}
+
+.quotes {
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+  color: #274c5b;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 165%;
+  text-align: center;
+}
+
+.default-button {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  font-family: "Roboto", "Open Sans", "Lato", "Montserat", sans-serif;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.default-button::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../images/arrow.png), #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.default-button_white {
+  background-color: #f9f8f8;
+  border: solid 1px #274c5b;
+}
+.default-button_yellow {
+  background-color: #efd372;
+  color: #274c5b;
+}
+.default-button_dark {
+  background-color: #274c5b;
+  color: #f9f8f8;
+}
+
+.products {
+  padding: 0 13vw;
+}
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.good {
+  position: relative;
+  width: 335px;
+  height: 485px;
+  border-radius: 30px;
+  background-color: #f9f8f8;
+}
+.good__category {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 6px 12px;
+  width: auto;
+  border-radius: 8px;
+  background: #274c5b;
+  color: #ffffff;
+}
+.good__image {
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+.good__image > rect {
+  fill: #f9f8f8;
+}
+.good__description {
+  position: absolute;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: left;
+  bottom: 0;
+}
+.good__name {
+  font-weight: 600;
+  font-size: 20px;
+}
+.good__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.good__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-family: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
+}
+.good__price-full {
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: line-through;
+  color: #b8b8b8;
+}
+.good__price-sale {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.star_yellow > path {
+  fill: #f3da35;
+}
+.star_white > path {
+  fill: #ffffff;
+}/*# sourceMappingURL=Products.css.map */

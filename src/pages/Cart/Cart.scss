@@ -1,0 +1,160 @@
+.cart {
+  &__header {
+    width: 100%;
+    background: url(../../images/pages/cart/background__pattern.svg),
+      url(../../images/pages/cart/background__image_left.svg), url(../../images/pages/cart/background__image_right.svg),
+      #e3f1e9;
+    background-position: center, left, right, center;
+    background-repeat: no-repeat;
+  }
+}
+
+.order {
+  padding: 10vh 0;
+  background-color: rgba(253, 176, 45, 0.16);
+  &__list {
+    margin-bottom: 100px;
+    padding: 0 5vw 10px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  &__cost {
+    padding-left: 72%;
+    margin-bottom: 60px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 30px;
+    grid-template-areas:
+      "order__cost_total order__cost_total-price"
+      "order__cost_discount order__cost_discount-price";
+
+    &__price {
+      text-align: right;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 0 20%;
+  }
+}
+
+.order-item {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+  &__information {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__price {
+    &-full {
+      font-size: 24px;
+    }
+
+    &-sale {
+      font-size: 40px;
+    }
+  }
+
+  .buying {
+    justify-content: space-between;
+    &__title {
+      font-size: 32px;
+    }
+
+    &__quantity {
+      height: 80px;
+      width: 135px;
+      font-size: 20px;
+      border-radius: 16px;
+    }
+
+    &__button {
+      &_delete {
+        width: 64px;
+        height: 46px;
+        background-color: $dark-blue;
+        border-radius: 30px;
+        color: #fff;
+
+        // &::before {
+        //   content: "X";
+        //   color: #fff;
+        //   font-family: $roboto;
+        //   font-weight: 800;
+        //   font-size: 20px;
+        // }
+      }
+    }
+  }
+}
+
+.form-order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto 1fr;
+  gap: 50px 45px;
+  grid-template-areas:
+    "form-order__block_name form-order__block_email"
+    "form-order__block_address form-order__block_phone"
+    "form-order__block_message form-order__block_message"
+    "form-order__button form-order__button";
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_message {
+      width: 100%;
+      grid-area: form-order__block_message;
+
+      & > .form-order__input_message {
+        height: 240px;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+  }
+
+  &__input {
+    padding-left: 25px;
+    height: 80px;
+    border-radius: 16px;
+    border: $light-green 1px solid;
+    color: #ababab;
+    font-family: $roboto;
+    font-style: italic;
+    font-size: 18px;
+
+    &_message {
+      padding-top: 25px;
+      height: 240px;
+    }
+  }
+
+  &__button {
+    justify-self: center;
+    grid-area: form-order__button;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+}

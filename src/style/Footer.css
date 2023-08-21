@@ -1,0 +1,86 @@
+.footer {
+  padding: 0 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  -webkit-column-gap: 8%;
+     -moz-column-gap: 8%;
+          column-gap: 8%;
+  grid-auto-flow: row;
+  grid-template-areas: "footer__contacts footer__comunication footer__utility";
+}
+.footer__contacts {
+  grid-area: footer__contacts;
+}
+.footer__comunication {
+  grid-area: footer__comunication;
+}
+.footer__utility {
+  grid-area: footer__utility;
+}
+
+.contacts,
+.utility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts {
+  gap: 30px;
+}
+.contacts__title {
+  text-align: right;
+}
+.contacts__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.contacts__point > * {
+  text-align: right;
+}
+
+.utility {
+  gap: 30px;
+}
+.utility__item {
+  text-align: left;
+}
+.utility__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.comunication {
+  text-align: center;
+}
+.comunication__company {
+  margin-bottom: 45px;
+}
+.comunication__logo {
+  margin-bottom: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=Footer.css.map */

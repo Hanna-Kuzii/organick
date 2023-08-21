@@ -1,0 +1,22 @@
+.news {
+  &__header {
+    background: url(../../images/pages/news/background__pattern.svg),
+      url(../../images/pages/news/background__image_left.svg), url(../../images/pages/news/background__image_right.svg),
+      $white;
+    background-position: center, left, right, center;
+    background-repeat: no-repeat;
+  }
+
+  &__posts {
+    padding: 0 13vw;
+  }
+
+  .post__button {
+    background-color: inherit;
+    text-align: left;
+
+    &::after {
+      right: 75px;
+    }
+  }
+}

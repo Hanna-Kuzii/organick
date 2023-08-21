@@ -1,0 +1,100 @@
+.testimonials {
+  position: relative;
+  padding: 10% 20vw;
+  overflow: hidden;
+  height: 1267px;
+  background: #fcfcfc;
+  z-index: 1;
+  text-align: center;
+}
+.testimonials > * {
+  z-index: 2;
+}
+.testimonials:before {
+  content: "";
+  position: absolute;
+  height: 1267px;
+  width: 450px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.testimonials::after {
+  content: "";
+  position: absolute;
+  height: 1267px;
+  width: 450px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+}
+.testimonials__content {
+  margin: auto;
+  width: 65%;
+}
+.testimonials__titles {
+  margin-bottom: 60px;
+}
+.testimonials__subtitle {
+  margin-bottom: 10px;
+}
+.testimonials__hr {
+  margin: 100px 0;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review__avatar {
+  max-width: 115px;
+  border-radius: 50%;
+}
+.review__position {
+  font-size: 15px;
+}
+
+.statistic__item {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.statistic__item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 210px;
+  width: 210px;
+}
+.statistic__text {
+  font-weight: 600;
+}/*# sourceMappingURL=Testimonials.css.map */

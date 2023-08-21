@@ -1,0 +1,159 @@
+.testimonials {
+  position: relative;
+  padding: 10% 23vw;
+  overflow: hidden;
+  height: 1267px;
+  background: #fcfcfc;
+  z-index: 1;
+  text-align: center;
+
+  & > * {
+    z-index: 2;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1267px;
+    width: 450px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+    transform: rotate(180deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1267px;
+    width: 450px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../../../images/testimonials__background.svg) 0 0 repeat;
+    // transform: rotate(180deg);
+  }
+
+  &__content {
+    margin: auto;
+    width: 70%;
+  }
+
+  &__titles {
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__hr {
+    margin: 10% 0;
+  }
+
+  // &__statistic {
+  //   width: 95%;
+  // }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  &__avatar {
+    max-width: 115px;
+    border-radius: 50%;
+  }
+
+  &__position {
+    font-size: 15px;
+  }
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    position: relative;
+    height: 190px;
+    width: 190px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -14px;
+      left: -14px;
+      height: 210px;
+      width: 210px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: $light-green solid 4px;
+      z-index: -2;
+    }
+  }
+  &__text {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1441px) {
+  .statistic {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 769px) {
+  .testimonials {
+    padding: 10% 25vw 10% 5vw;
+    text-align: left;
+    &::after {
+      height: 0;
+      width: 0;
+    }
+    &__content {
+      margin: 0;
+    }
+  }
+  .review {
+    align-items: start;
+  }
+  .statistic {
+    width: 90%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 481px) {
+  .testimonials {
+    height: auto;
+    padding-right: 5vw;
+    background: $white;
+    text-align: center;
+    &::before {
+      width: 0;
+      height: 0;
+    }
+    &__content {
+      width: 100%;
+    }
+  }
+  .review {
+    align-items: center;
+  }
+  .statistic {
+    width: 100%;
+    gap: 35px;
+    justify-content: center;
+  }
+}

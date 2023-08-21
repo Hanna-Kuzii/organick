@@ -1,0 +1,189 @@
+.footer {
+  padding: 10vh 15vw;
+  // display: flex;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 8%;
+  grid-auto-flow: row;
+  grid-template-areas: "footer__contacts footer__comunication footer__utility";
+
+  &__contacts {
+    grid-area: footer__contacts;
+  }
+
+  &__comunication {
+    grid-area: footer__comunication;
+  }
+
+  &__utility {
+    grid-area: footer__utility;
+  }
+}
+
+.contacts,
+.utility {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  gap: 30px;
+
+  &__title {
+    text-align: right;
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__point {
+    & > * {
+      text-align: right;
+    }
+  }
+}
+
+.utility {
+  gap: 30px;
+
+  &__item {
+    text-align: left;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    transition: text-shadow 0.5s ease-in-out;
+
+    &:hover {
+      text-shadow:
+        3px 0px 7px rgba(81, 67, 21, 0.8),
+        -3px 0px 7px rgba(81, 67, 21, 0.8),
+        0px 4px 7px rgba(81, 67, 21, 0.8);
+    }
+  }
+}
+
+.comunication {
+  text-align: center;
+
+  &__company {
+    margin-bottom: 45px;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  &__link {
+    width: 60px;
+    height: 60px;
+    background-color: $light-grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    padding: 8vh 10vw;
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    &__contacts {
+      order: 2;
+    }
+
+    &__comunication {
+      order: 1;
+    }
+
+    &__utility {
+      order: 3;
+    }
+  }
+  .comunication {
+    &__company {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts {
+    gap: 10px;
+    &__points {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__name,
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .utility {
+    gap: 10px;
+    &__title {
+      text-align: center;
+    }
+    &__links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .contacts {
+    &__points {
+      flex-direction: column;
+    }
+    &__point {
+      & > * {
+        text-align: center;
+      }
+    }
+  }
+
+  .utility {
+    &__links {
+      flex-direction: column;
+    }
+    &__item {
+      text-align: center;
+    }
+  }
+}
