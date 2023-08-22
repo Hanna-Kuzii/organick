@@ -20,3 +20,19 @@
     }
   }
 }
+
+@media (max-width: 1681px) {
+  .news {
+    &__posts {
+      padding: 0 7vw;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .news {
+    &__posts {
+      padding: 0 7vw;
+    }
+  }
+}

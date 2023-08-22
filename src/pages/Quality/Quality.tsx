@@ -32,9 +32,17 @@ export const Quality = () => {
           </div>
           <div className="store-services__content">
             <div className="store-services__point">
-              <img src={ground} alt="ground" className="store-services__pic" />
+              <div className="store-services__pic">
+                <img
+                  src={ground}
+                  alt="ground"
+                  className="store-services__image"
+                />
+              </div>
               <div className="store-services__info">
-                <div className="store-services__subtitle textH6">Why Organic</div>
+                <div className="store-services__subtitle textH6">
+                  Why Organic
+                </div>
                 <div className="store-services__text paragraph">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat.
                   page editors now use Lorem Ipsum as their default model text,
@@ -42,16 +50,24 @@ export const Quality = () => {
                 </div>
               </div>
             </div>{" "}
-            <div className="store-services__point">
+            <div className="store-services__point store-services__point_speciality">
               <div className="store-services__info">
-                <div className="store-services__subtitle textH6">Why Organic</div>
+                <div className="store-services__subtitle textH6">
+                  Speciality Produce
+                </div>
                 <div className="store-services__text paragraph">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptat.
                   page editors now use Lorem Ipsum as their default model text,
                   and auncover.
                 </div>
               </div>
-              <img src={plants} alt="ground" className="store-services__pic" />
+              <div className="store-services__pic">
+                <img
+                  src={plants}
+                  alt="ground"
+                  className="store-services__image"
+                />
+              </div>
             </div>
           </div>
           <div className="store-services__farm farm">

@@ -119,13 +119,13 @@ export const Cart = () => {
                         )
                       }
                     />
-                    <button
-                      className="buying__button_delete textH6"
+                  </div>
+                  <button
+                      className="order-item__button_delete textH6"
                       onClick={() => handleRemoveItem(product.good.id)}
                     >
                       X
                     </button>
-                  </div>
                 </div>
               ))}
             </div>

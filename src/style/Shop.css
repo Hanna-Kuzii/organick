@@ -4,4 +4,10 @@
 }
 .shop__products {
   padding: 0 13vw;
+}
+
+@media (max-width: 1281px) {
+  .shop__products {
+    padding: 0 5vw 5vh;
+  }
 }/*# sourceMappingURL=Shop.css.map */

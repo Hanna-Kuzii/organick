@@ -69,6 +69,7 @@
   }
 
   &__buttons {
+    margin-top: 20px;
     text-align: center;
   }
 }
@@ -78,6 +79,7 @@
   padding-top: 10%;
   background-image: url(../../images/pages/services/organic.svg);
   background-repeat: no-repeat;
+  background-position: center;
 
   &__text {
     width: 50%;
@@ -91,7 +93,7 @@
     background-color: $light-green;
     border-radius: 50%;
     border: none;
-    box-shadow: -4px 10px 12px #DBD1B5;
+    box-shadow: -4px 10px 12px #dbd1b5;
 
     &::after {
       content: "";
@@ -103,7 +105,58 @@
       width: 22px;
       height: 24px;
 
-      clip-path: polygon(0 0, 100% 50%, 0 100%)
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  }
+}
+
+@media (max-width: 1281px) {
+  .services {
+    &__grow {
+      padding: 10vh 5vw 15vh;
+    }
+  }
+  .grow {
+    &__picture {
+      align-self: baseline;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .grow {
+    &__title {
+      text-align: center;
+    }
+    &__content {
+      gap: 30px;
+    }
+    &__picture {
+      display: none;
+    }
+  }
+  .organic {
+    height: 750px;
+    padding: 10% 2vw 0;
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .grow {
+    &__content {
+      flex-direction: column;
+      gap: 25px;
+    }
+    &__points {
+      gap: 25px;
     }
   }
 }

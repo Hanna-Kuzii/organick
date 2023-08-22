@@ -4,8 +4,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: auto;
+  width: 90vw;
+  height: 90vh;
   background-color: white;
   border-radius: 15px;
   z-index: 11;
@@ -14,7 +14,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: center;
     gap: 5vh;
   }
 }
@@ -30,8 +30,10 @@
 
 .picture {
   position: relative;
-  height: 500px;
-  width: 500px;
+  max-height: 500px;
+  height: auto;
+  max-width: 500px;
+  width: 50%;
   background-color: $white;
   border-radius: 30px;
   display: flex;
@@ -117,7 +119,6 @@
 }
 
 .add-info {
-
   &__buttons {
     margin-bottom: 15px;
     display: flex;
@@ -133,6 +134,76 @@
     display: none;
     &_active {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 1681px) {
+  .product {
+    padding: 8vh 10vw;
+  }
+}
+
+@media (max-width: 1441px) {
+  .product {
+    padding: 5vh 5vw;
+  }
+}
+
+@media (max-width: 1281px) {
+  .product {
+    &__content {
+      gap: 1vh;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .information {
+    gap: 3vw;
+  }
+  .buying {
+    &__button {
+      width: 100%;
+    }
+  }
+  .details {
+    gap: 15px;
+  }
+}
+@media (max-width: 769px) {
+  .information {
+    gap: 3vw;
+  }
+  .buying {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__quantity {
+      height: 25%;
+    }
+    &__button {
+      width: 75%;
+    }
+  }
+  .details {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    height: 180vh;
+    overflow-x: scroll;
+
+    .default-button {
+      &::after {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  .add-info {
+    &__text {
+      display: none;
     }
   }
 }

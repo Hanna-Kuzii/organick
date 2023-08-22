@@ -10,11 +10,13 @@
   }
 }
 .main-info {
+  // position: relative;
   padding: 25px 10vw 10px 3vw;
   display: flex;
   justify-content: space-between;
 
   &__picture {
+    // position: absolute;
     width: 50%;
   }
 
@@ -64,6 +66,7 @@
   background-color: $white;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 
   &__content {
     width: 47%;
@@ -71,7 +74,11 @@
     flex-direction: column;
     gap: 35px;
   }
-
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
   &__points {
     display: flex;
     flex-direction: column;
@@ -106,9 +113,13 @@
       padding-left: 55px;
     }
   }
-
+  &__picture {
+    width: 45%;
+    max-width: 678px;
+  }
   &__image {
     border-radius: 30px;
+    width: 100%;
   }
 }
 
@@ -167,11 +178,12 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
 
   &__person {
     border-radius: 30px;
-    width: min-content;
+    width: 33%;
     height: fit-content;
     background-color: $white;
     transition: box-shadow 0.3s ease-in-out;
@@ -186,6 +198,7 @@
 
   &__photo {
     border-radius: 30px 30px 0 0;
+    width: fill-available;
   }
 
   &__details {
@@ -198,9 +211,8 @@
       "team__name ."
       "team__position team__links";
     text-align: left;
-    transition:
-      background-color 0.3s ease-in-out;
-      border-radius: 0 0 30px 30px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0 0 30px 30px;
   }
 
   &__name {
@@ -234,9 +246,11 @@
   &__categories {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
 
   &__category {
+    width: 24%;
   }
 
   &__name {
@@ -247,14 +261,202 @@
   }
 
   &__pic {
-    width: 334px;
+    width: auto;
     height: 314px;
     background-color: #fff;
     border-radius: 30px;
     text-align: center;
+    overflow: hidden;
   }
 
   &__image {
+    width: fill-available;
+    height: 100%;
     border-radius: 30px;
+  }
+}
+
+@media (max-width: 1681px) {
+  .main-info {
+    &__picture {
+      margin-left: -10%;
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .main-info {
+    padding-right: 5vw;
+    &__picture {
+      margin-left: -20%;
+    }
+  }
+  .whyus {
+    padding: 10vh 5vw;
+  }
+  .options {
+    &__list {
+      padding: 0 5vw;
+    }
+  }
+  .team {
+    &__details {
+      grid-template-rows: 2fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .main-info {
+    padding-right: 2vw;
+    &__picture {
+      margin-left: -50%;
+    }
+    &__content {
+      width: 55%;
+    }
+  }
+  .whyus {
+    &__points {
+      width: 220%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .options {
+    padding: 0 5vw 10vh 5vw;
+    &__list {
+      padding: 0;
+    }
+  }
+  .we-offer {
+    &__pic {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .main-info {
+    &__picture {
+      margin-left: -90%;
+    }
+    &__content {
+      width: 65%;
+    }
+    &__points {
+      margin-left: -20%;
+    }
+  }
+  .whyus {
+    &__image {
+      margin-top: 30%;
+    }
+    &__points {
+      width: 200%;
+      flex-direction: column;
+    }
+  }
+  .options {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    &__item {
+      width: 45%;
+    }
+  }
+
+  .team {
+    padding: 10vh 5vw;
+    &__list {
+      align-items: center;
+    }
+    &__details {
+      padding: 25px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .we-offer {
+    &__pic {
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .main-info {
+    &__image {
+      display: none;
+    }
+    &__content {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__points {
+      margin-left: 0;
+    }
+  }
+  .whyus {
+    flex-direction: column;
+    &__content {
+      width: 100%;
+    }
+    &__points {
+      width: 100%;
+      // flex-direction: column;
+    }
+    &__picture {
+      width: 100%;
+    }
+    &__image {
+      margin: 0;
+    }
+  }
+  .team {
+    &__list {
+      flex-direction: column;
+    }
+    &__person {
+      width: 80%;
+    }
+  }
+  .we-offer {
+    &__categories {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__category {
+      width: 80%;
+    }
+    &__pic {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .main-info {
+    &__points {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .whyus {
+    &__point {
+      &__title {
+        width: 100%;
+      }
+    }
+  }
+  .options {
+    &__item {
+      height: auto;
+      width: 80%;
+      padding: 30px 20px 10px;
+    }
   }
 }

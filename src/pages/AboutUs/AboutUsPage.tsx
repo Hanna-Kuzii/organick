@@ -85,14 +85,16 @@ export const AboutUsPage = () => {
         </div>
         <div className="about-us-page__whyus whyus">
           <div className="whyus__content">
-            <div className="whyus__subtitle italic">Why choose us?</div>
-            <div className="whyus__title textH2">
-              We do not buy from the open market & traders.
-            </div>
-            <div className="whyus__text paragraph">
-              Simply dummy text of the printing and typesetting industry. Lorem
-              had ceased to been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley.
+            <div className="whyus__description">
+              <div className="whyus__subtitle italic">Why choose us?</div>
+              <div className="whyus__title textH2">
+                We do not buy from the open market & traders.
+              </div>
+              <div className="whyus__text paragraph">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem had ceased to been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley.
+              </div>
             </div>
             <div className="whyus__points">
               <div className="whyus__point">
@@ -193,7 +195,8 @@ export const AboutUsPage = () => {
             {team.map((person: Person) => (
               <li className="team__person" key={person.id}>
                 <img
-                  src={require('../../images/pages/aboutUsPage/' + person.photo)}
+                  src={require("../../images/pages/aboutUsPage/" +
+                    person.photo)}
                   alt={person.name}
                   className="team__photo"
                 />

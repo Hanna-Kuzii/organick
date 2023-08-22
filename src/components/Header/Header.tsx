@@ -52,7 +52,7 @@ export const Header = () => {
               </NavLink>
             </li>
             <li className="navigation__item textH6 navigation__dropdown">
-              <span>Pages</span>
+              <span className="navigation__pages-title">Pages</span>
               <div className="navigation__content">
                 <NavLink
                   to={"/quality"}
