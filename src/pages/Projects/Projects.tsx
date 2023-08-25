@@ -16,13 +16,13 @@ export const Projects = () => {
                   alt={project.name}
                   className="projects__image"
                 />
+                <div className="projects__hover">
+                  <button className="projects__hover_button"></button>
+                </div>
               </div>
               <div className="projects__name textH6">{project.name}</div>
               <div className="projects__categories italic">
                 {project.categories}
-              </div>
-              <div className="projects__hover">
-                <button className="projects__hover_button"></button>
               </div>
             </div>
           ))}
