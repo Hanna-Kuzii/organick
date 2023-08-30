@@ -1,6 +1,6 @@
 # Orhanick
 
-This project is built using Node.js and React, with MySQL as the database management system. The website is designed to be adaptive and cross-browser compatible, supporting Chrome and Firefox. The project follows the BEM methodology and utilizes SCSS for styling.
+This project is built using Node.js and React, with MySQL as the database management system. The website is designed to be adaptive and cross-browser compatible. The project follows the BEM methodology and utilizes SCSS for styling.
 
 ## Table of Contents
 
