@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/organick/static/css/main.cb2ac320.css",
-    "main.js": "/organick/static/js/main.09923a96.js",
+    "main.css": "/organick/static/css/main.56194b9f.css",
+    "main.js": "/organick/static/js/main.26d2c489.js",
     "static/js/787.258b3cdc.chunk.js": "/organick/static/js/787.258b3cdc.chunk.js",
     "static/media/different_vegetables.svg": "/organick/static/media/different_vegetables.d0143288a9d6b8595fa8c74f40d91f7c.svg",
     "static/media/organic.svg": "/organick/static/media/organic.f6711afb00ceb67264b8.svg",
@@ -41,12 +41,28 @@
     "static/media/galery__organic-juice.svg": "/organick/static/media/galery__organic-juice.5e65f77d11b6b83d930b.svg",
     "static/media/MarianneLoreno.png": "/organick/static/media/MarianneLoreno.bbc80166294c5940e5f2.png",
     "static/media/RigaPelore.png": "/organick/static/media/RigaPelore.bc34c93a3a4984696e57.png",
+    "static/media/cauliflower.png": "/organick/static/media/cauliflower.e7309cf2faef94f17bfe.png",
     "static/media/GiovaniBacardo.png": "/organick/static/media/GiovaniBacardo.0faf15658caf913da9c7.png",
     "static/media/testimonials__avatar.svg": "/organick/static/media/testimonials__avatar.3c23b5f722dc501bc3a007d47ee0ca0f.svg",
-    "static/media/calabrese_broccoli.svg": "/organick/static/media/calabrese_broccoli.5d4834ea313ecab3e08ca649b963f74d.svg",
+    "static/media/calabrese_broccoli.svg": "/organick/static/media/calabrese_broccoli.5d4834ea313ecab3e08c.svg",
+    "static/media/mung_bean.png": "/organick/static/media/mung_bean.767b471665ded05f041a.png",
+    "static/media/brown_hazelnut.png": "/organick/static/media/brown_hazelnut.09eb0c93468cca3818f9.png",
+    "static/media/white_nuts.png": "/organick/static/media/white_nuts.2c6e4b3321d597f60d7f.png",
+    "static/media/zelco_suji_elaichi_rusk.png": "/organick/static/media/zelco_suji_elaichi_rusk.03328754d083784a43ec.png",
+    "static/media/white_hazelnut.png": "/organick/static/media/white_hazelnut.0570329bfe9ca8534468.png",
+    "static/media/zucchini.png": "/organick/static/media/zucchini.0f79a74619cb2800db3f.png",
     "static/media/fruits.svg": "/organick/static/media/fruits.2c94b44490bb16f389240211b3a96b0d.svg",
     "static/media/nuts_feesd.svg": "/organick/static/media/nuts_feesd.a8427057e7a94c34eca3db94ffc4e4b9.svg",
+    "static/media/calabrese_broccoli.png": "/organick/static/media/calabrese_broccoli.67ced2f90c63d523266d.png",
+    "static/media/vegan_red_tomato.png": "/organick/static/media/vegan_red_tomato.d34189ca1adbd65039af.png",
+    "static/media/organic_almonds.png": "/organick/static/media/organic_almonds.39c1bdfee0deb3cee5c8.png",
+    "static/media/onion.png": "/organick/static/media/onion.ed4115702f1a58b6cb4e.png",
+    "static/media/cabbage.png": "/organick/static/media/cabbage.319f433f6d5ea3c920e3.png",
+    "static/media/fresh_corn.png": "/organick/static/media/fresh_corn.bd305a4cd67dfac9f6df.png",
     "static/media/growPic.svg": "/organick/static/media/growPic.46fe995eda91a7377cfac72d65a68a0d.svg",
+    "static/media/fresh_banana_fruites.png": "/organick/static/media/fresh_banana_fruites.147ce0c3127f3d686765.png",
+    "static/media/squash.png": "/organick/static/media/squash.a4cfcb47ab0445fc72e7.png",
+    "static/media/eggs.png": "/organick/static/media/eggs.2cf6224dd24f4180167d.png",
     "static/media/banner__background.svg": "/organick/static/media/banner__background.93b3e9b053ca6eced2c0.svg",
     "static/media/background__patterns.svg": "/organick/static/media/background__patterns.1c74a0e5d7b7b0229b2f.svg",
     "static/media/background_pattern.svg": "/organick/static/media/background_pattern.b22b8a16ae132ad11509.svg",
@@ -78,12 +94,12 @@
     "static/media/header__search.svg": "/organick/static/media/header__search.3fa8b4811085ac84781b641146e756d8.svg",
     "index.html": "/organick/index.html",
     "static/media/facebook.svg": "/organick/static/media/facebook.89be52bcb840af132f7c64fba87c0f03.svg",
-    "main.cb2ac320.css.map": "/organick/static/css/main.cb2ac320.css.map",
-    "main.09923a96.js.map": "/organick/static/js/main.09923a96.js.map",
+    "main.56194b9f.css.map": "/organick/static/css/main.56194b9f.css.map",
+    "main.26d2c489.js.map": "/organick/static/js/main.26d2c489.js.map",
     "787.258b3cdc.chunk.js.map": "/organick/static/js/787.258b3cdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb2ac320.css",
-    "static/js/main.09923a96.js"
+    "static/css/main.56194b9f.css",
+    "static/js/main.26d2c489.js"
   ]
 }
