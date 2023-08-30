@@ -1,9 +1,6 @@
 import React from "react";
 import { useState, useContext } from "react";
 import { Good } from "../../types/good";
-import image from "../../images/products/calabrese_broccoli.svg";
-import star from "../../images/products/star.svg";
-import { OrderGood } from "../../types/orderGood";
 import { OrderListContext } from "../../hooks/OrderListContext";
 
 interface ProductProps {

@@ -195,7 +195,7 @@
 
   &__photo {
     border-radius: 30px 30px 0 0;
-    width: fill-available;
+    width: stretch;
   }
 
   &__details {
@@ -267,7 +267,7 @@
   }
 
   &__image {
-    width: fill-available;
+    width: stretch;
     height: 100%;
     border-radius: 30px;
   }
