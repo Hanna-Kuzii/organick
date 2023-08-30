@@ -1,5 +1,4 @@
 .products {
-  // padding: 0 13vw;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +12,8 @@
   width: 335px;
   height: 485px;
   border-radius: 30px;
-  background-color: $white;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 0;
 
   &__category {
@@ -37,8 +37,12 @@
     z-index: -1;
   }
   &__image {
-    height: 100%;
-    & > rect {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    background-color: inherit;
+    & > rect, path {
       fill: $white;
     }
   }
@@ -113,4 +117,8 @@
       fill: $white;
     }
   }
+}
+
+.pic {
+  fill: #F9F8F8;
 }

@@ -1,46 +1,79 @@
 import { useContext, useState } from "react";
-
 import { OrderGood } from "../../types/orderGood";
 import { OrderListContext } from "../../hooks/OrderListContext";
 import { useInput } from "../../hooks/useInput";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { Good } from "../../types/good";
 
 export const Cart = () => {
   const { orderList, setOrderList } = useContext(OrderListContext);
   const [isOrderForm, setIsOrderForm] = useState(false);
   const navigate = useNavigate();
 
-  const fullName = useInput("");
+  const name = useInput("");
   const email = useInput("");
   const address = useInput("");
   const phone = useInput("");
   const message = useInput("");
 
-  const submitForm = (event: any) => {
+  const submitForm = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    const customer = {
-      fullname: fullName.value,
-      email: email.value,
-      address: address.value,
-      phone: phone.value,
-      message: message.value,
-    };
+    try {
+      const idUser = Math.floor(Math.random() * 10000000);
+      const customer = {
+        idCustomer: idUser,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        address: address.value,
+        message: message.value,
+        created: new Date(),
+      };
+      await axios.post("http://localhost:8000/user", customer);
+    
+      const idCartList = Math.floor(Math.random() * 10000000);
+      const cartList = {
+        idCartList: idCartList,
+        totalAmount: totalCost,
+        discount: discount,
+        created: new Date(),
+      };
+      await axios.post("http://localhost:8000/cart_list", cartList);
+    
+      for (const item of orderList) {
+        const orderItem = {
+          idOrderItem: Math.floor(Math.random() * 10000000),
+          productId: item.good.id,
+          orderListId: idCartList,
+          quantity: item.quantity,
+        };
+        await axios.post("http://localhost:8000/cart_item", orderItem);
+      }
+    
+      const order = {
+        idOrder: Math.floor(Math.random() * 100000000),
+        userId: idUser,
+        orderListId: idCartList,
+        created: new Date(),
+      };
+      await axios.post("http://localhost:8000/order", order);
+    
+    } catch (err) {
+      console.log(err);
+    }
+    
 
-    const order = {
-      customer,
-      orderList,
-    };
 
-    localStorage.setItem("order", JSON.stringify(order));
-
-    fullName.clear();
+    name.clear();
     email.clear();
     address.clear();
     phone.clear();
     message.clear();
     setOrderList([]);
     setIsOrderForm(false);
+    localStorage.setItem("orderList", JSON.stringify([]));
 
     navigate("/order");
   };
@@ -64,6 +97,7 @@ export const Cart = () => {
     );
     setOrderList(updatedOrderList);
   };
+  
 
   let totalCost = 0;
   let discount = 0;
@@ -90,7 +124,7 @@ export const Cart = () => {
                 >
                   <div className="order-item__picture">
                     <img
-                      src={product.good.image}
+                      src={require("../../images/products/" + product.good.image)}
                       alt={product.good.name}
                       className="order-item__image"
                     />
@@ -175,8 +209,8 @@ export const Cart = () => {
                     name="name"
                     className="form-order__input form-order__input_name"
                     placeholder="Your Full Name"
-                    value={fullName.value}
-                    onChange={fullName.onChange}
+                    value={name.value}
+                    onChange={name.onChange}
                     required
                   />
                 </div>

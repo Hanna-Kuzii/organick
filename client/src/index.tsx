@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -10,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router basename="/organick" >
+    <Router basename="/organick">
       <App />
     </Router>
   </React.StrictMode>

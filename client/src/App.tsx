@@ -8,7 +8,6 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { Cart } from "./pages/Cart/Cart";
-// import { Subscribe } from "./components/Subscribe/Subscribe";
 import { OrderGood } from "./types/orderGood";
 import { OrderListContext } from "./hooks/OrderListContext";
 import { OrderEnd } from "./pages/OrderEnd/OrderEnd";
@@ -20,6 +19,7 @@ import { Services } from "./pages/Services/Services";
 import { Quality } from "./pages/Quality/Quality";
 import { Projects } from "./pages/Projects/Projects";
 import { Good } from "./types/good";
+import { OrderPage } from "./pages/OrderPage/OrderPage";
 
 function App() {
   const [orderList, setOrderList] = useState<OrderGood[]>([]);
@@ -60,6 +60,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/ordersPage" element={<OrderPage />} />
           <Route path="/*" element={<PageNotFound />}/>
         </Routes>
         {/* <Subscribe /> */}

@@ -1,5 +1,6 @@
 export interface Good {
   id: number,
+  categoryId: number,
   category: string,
   name: string,
   image: string,

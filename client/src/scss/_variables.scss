@@ -93,7 +93,6 @@ $open-sans: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
-  // text-align: center;
 
   &::after {
     position: absolute;
@@ -136,10 +135,4 @@ $open-sans: "Open Sans", "Lato", "Source Sans Pro", "Montserat", sans-serif;
   &:hover {
     transform: scale(1.1);
   }
-
-  // &:focus, &:active {
-  //   background-color: $white;
-  //   border: $dark-blue solid 1px;
-  //   color: $dark-blue;
-  // }
 }

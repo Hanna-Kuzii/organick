@@ -9,7 +9,6 @@ export const Categories: React.FC<ProductsProps> = ({ products }) => {
   const [isHideVisible, setIsHideVisible] = useState(false);
 
   useEffect(() => {
-    // Shuffle the initial products array
     const shuffledInitialProducts = shuffleArray(products);
     setRandomProducts(shuffledInitialProducts);
     setVisibleProducts(shuffledInitialProducts.slice(0, 8));
@@ -38,8 +37,6 @@ export const Categories: React.FC<ProductsProps> = ({ products }) => {
     setIsLoadVisible(true);
     setIsHideVisible(false);
   };
-
-  console.log(visibleProducts);
 
   return (
     <div className="home__categories categories">

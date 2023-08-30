@@ -1,7 +1,6 @@
 import { Products, ProductsProps } from "../../components/Products/Products"
 import { Subscribe } from "../../components/Subscribe/Subscribe";
 import {Good } from "../../types/good";
-// import products from '../../json/products.json';
 
 export const Shop: React.FC<ProductsProps> = ({ products}) => {
   return (

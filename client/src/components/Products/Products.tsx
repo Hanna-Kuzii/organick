@@ -1,9 +1,6 @@
 import { Good } from "../../types/good";
-import pic from "../../images/products/calabrese_broccoli.svg";
-import star from "../../images/products/star.svg";
 import { useState } from "react";
 import { Product } from "../Product/Product";
-import { OrderGood } from "../../types/orderGood";
 
 export interface ProductsProps {
   products: Good[];
@@ -13,7 +10,6 @@ export const Products: React.FC<ProductsProps> = ({ products }) => {
   const [modalProduct, setModalProduct] = useState(false);
   const [choosedProduct, setChoosedProduct] = useState<Good>({} as Good);
 
-  console.log(modalProduct);
   const ratingStars = (rating: number) => {
     let starsYellow = [];
     let starsWhite = [];
@@ -78,7 +74,6 @@ export const Products: React.FC<ProductsProps> = ({ products }) => {
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
-                          // fill="currentColor"
                           viewBox="0 0 16 16"
                         >
                           <path

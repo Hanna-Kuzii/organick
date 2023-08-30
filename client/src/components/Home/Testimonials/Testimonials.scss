@@ -31,7 +31,6 @@
     left: 0;
     z-index: -1;
     background: url(../../../images/testimonials__background.svg) 0 0 repeat;
-    // transform: rotate(180deg);
   }
 
   &__content {
@@ -50,10 +49,6 @@
   &__hr {
     margin: 10% 0;
   }
-
-  // &__statistic {
-  //   width: 95%;
-  // }
 }
 
 .review {

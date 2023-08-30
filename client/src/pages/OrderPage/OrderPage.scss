@@ -1,0 +1,35 @@
+.order-page {
+  padding: 5vh 5vw;
+}
+
+.table {
+  font-family: $open-sans;
+  &__head {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  &-order {
+    &__orderId {
+      font-weight: 600;
+    }
+    & tr {
+      cursor: pointer;
+    }
+    &__tr_choosed {
+      &,
+      & th,
+      & td {
+        background-color: $white;
+      }
+    }
+  }
+  &-products {
+    margin: 5vh auto;
+    width: 50%;
+
+    &__header {
+      font-weight: 800;
+      font-size: 2em;
+    }
+  }
+}

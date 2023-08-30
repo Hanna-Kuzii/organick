@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // Removed 'useEffect' import since it's not being used
+import React, { useState } from "react";
 import axios from "axios";
 
 export const Subscribe = () => {

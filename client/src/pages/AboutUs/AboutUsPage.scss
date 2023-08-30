@@ -10,13 +10,11 @@
   }
 }
 .main-info {
-  // position: relative;
   padding: 25px 10vw 10px 3vw;
   display: flex;
   justify-content: space-between;
 
   &__picture {
-    // position: absolute;
     width: 50%;
   }
 
@@ -140,7 +138,6 @@
     display: flex;
     gap: 15px;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #fff;
@@ -407,7 +404,6 @@
     }
     &__points {
       width: 100%;
-      // flex-direction: column;
     }
     &__picture {
       width: 100%;

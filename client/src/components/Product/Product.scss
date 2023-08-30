@@ -1,6 +1,6 @@
 .product {
   position: fixed;
-  padding: 8vh 13vw;
+  padding: 5vh 10vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -17,6 +17,19 @@
     justify-content: center;
     gap: 5vh;
   }
+
+  &__close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 35px;
+    width: 45px;
+    font-weight: 500;
+    font-family: $open-sans;
+    background-color: $white;
+    border-radius: 20px;
+    border: none;
+  }
 }
 
 .information {
@@ -31,17 +44,17 @@
 .picture {
   position: relative;
   max-height: 500px;
-  height: auto;
+  height: 50vh;
   max-width: 500px;
-  width: 50%;
-  background-color: $white;
+  width: auto;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__image {
-    // width: 95%;
     height: 95%;
   }
 
@@ -158,6 +171,11 @@
   }
 }
 @media (max-width: 1025px) {
+  .product {
+    .paragraph {
+      font-size: 15px;
+    }
+  }
   .information {
     gap: 3vw;
   }

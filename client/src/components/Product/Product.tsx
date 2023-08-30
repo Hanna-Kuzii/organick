@@ -12,6 +12,11 @@ interface ProductProps {
   ratingStars: (arg: number) => string[];
 }
 
+interface OrderItem {
+  good: Good;
+  quantity: number;
+}
+
 export const Product: React.FC<ProductProps> = ({
   setModalProduct,
   good,
@@ -36,18 +41,32 @@ export const Product: React.FC<ProductProps> = ({
     if (parseInt(quantity) > 0) {
       const newOrderItem = { good, quantity: parseInt(quantity) };
 
-      const updatedOrderList = [...orderList, newOrderItem];
-      setOrderList(updatedOrderList);
+      const updatedOrderList: OrderItem[] = orderList.map(
+        (order: OrderItem) => {
+          if (order.good.id === newOrderItem.good.id) {
+            return {
+              ...order,
+              quantity: order.quantity + newOrderItem.quantity,
+            };
+          }
+          return order;
+        }
+      );
 
-      localStorage.setItem('orderList', JSON.stringify(updatedOrderList));
+      const isNewItem = !updatedOrderList.some(
+        (order: OrderItem) => order.good.id === newOrderItem.good.id
+      );
+      if (isNewItem) {
+        updatedOrderList.push(newOrderItem);
+      }
+
+      setOrderList(updatedOrderList);
+      localStorage.setItem("orderList", JSON.stringify(updatedOrderList));
 
       setQuantity("");
       setModalProduct(false);
     }
   };
-
-  console.log(orderList);
-
   return (
     <>
       <div className="overlay" onClick={() => setModalProduct(false)}></div>
@@ -151,6 +170,9 @@ export const Product: React.FC<ProductProps> = ({
             </div>
           </div>
         </div>
+        <button className="product__close" onClick={() => setModalProduct(false)}>
+          X
+        </button>
       </div>
     </>
   );
