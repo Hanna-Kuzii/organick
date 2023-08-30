@@ -4,7 +4,6 @@ import { OrderListContext } from "../../hooks/OrderListContext";
 import { useInput } from "../../hooks/useInput";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Good } from "../../types/good";
 
 export const Cart = () => {
   const { orderList, setOrderList } = useContext(OrderListContext);
