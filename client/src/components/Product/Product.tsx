@@ -119,7 +119,7 @@ export const Product: React.FC<ProductProps> = ({
               <div className="details__buying buying">
                 <div className="buying__title textH6">Quantity:</div>
                 <input
-                  type="text"
+                  type="number"
                   name="quantity"
                   id="quantity"
                   className="buying__quantity textH6"

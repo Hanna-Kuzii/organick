@@ -63,7 +63,6 @@ function App() {
           <Route path="/ordersPage" element={<OrderPage />} />
           <Route path="/*" element={<PageNotFound />}/>
         </Routes>
-        {/* <Subscribe /> */}
         <Footer />
       </div>
     </OrderListContext.Provider>
