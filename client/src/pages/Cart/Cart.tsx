@@ -32,7 +32,7 @@ export const Cart = () => {
         created: new Date(),
       };
       await axios.post("http://localhost:8000/user", customer);
-    
+
       const idCartList = Math.floor(Math.random() * 10000000);
       const cartList = {
         idCartList: idCartList,
@@ -41,7 +41,7 @@ export const Cart = () => {
         created: new Date(),
       };
       await axios.post("http://localhost:8000/cart_list", cartList);
-    
+
       for (const item of orderList) {
         const orderItem = {
           idOrderItem: Math.floor(Math.random() * 10000000),
@@ -51,7 +51,7 @@ export const Cart = () => {
         };
         await axios.post("http://localhost:8000/cart_item", orderItem);
       }
-    
+
       const order = {
         idOrder: Math.floor(Math.random() * 100000000),
         userId: idUser,
@@ -59,12 +59,9 @@ export const Cart = () => {
         created: new Date(),
       };
       await axios.post("http://localhost:8000/order", order);
-    
     } catch (err) {
       console.log(err);
     }
-    
-
 
     name.clear();
     email.clear();
@@ -97,17 +94,16 @@ export const Cart = () => {
     );
     setOrderList(updatedOrderList);
   };
-  
 
   let totalCost = 0;
   let discount = 0;
 
   orderList.forEach((item: OrderGood) => {
+    totalCost += item.quantity * item.good.priceNew;
+
     if (item.good.priceOld !== null) {
-      totalCost += item.quantity * item.good.priceNew;
       discount += item.quantity * (item.good.priceOld - item.good.priceNew);
     }
-    totalCost += item.quantity * item.good.priceNew;
   });
 
   return (
@@ -124,7 +120,8 @@ export const Cart = () => {
                 >
                   <div className="order-item__picture">
                     <img
-                      src={require("../../images/products/" + product.good.image)}
+                      src={require("../../images/products/" +
+                        product.good.image)}
                       alt={product.good.name}
                       className="order-item__image"
                     />
