@@ -1,5 +1,5 @@
 .offer {
-  padding: 15vh 13vw;
+  padding: 15vh 8vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,13 @@
 
 @media (max-width: 1681px) {
   .offer {
-    padding: 15vh 8vw;
+    padding: 15vh 5vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .offer {
+    padding: 12vh 1vw;
   }
 }
 
