@@ -39,23 +39,32 @@ This project is built using Node.js and React, with MySQL as the database manage
 
 1. Clone the repository: `git clone [repository URL]`
 2. Navigate to the project folder: `cd [project folder]`
-3. Install dependencies: `npm install`
+3. Install dependencies: `npm install` in client and server folder
 
 ### Database Setup
 
-1. Create a MySQL database named `[database name]`.
+1. Create a MySQL database named `testdb`.
 2. Import the provided SQL dump file (`database.sql`) to create the necessary tables.
-3. Configure the database connection in `[path to config file]`.
+3. Configure the database connection in `/server`.
 
 ## Usage
 
-To start the development server, run:
+To start the server, run in `server` folder:
+
+```bash
+npm start
+```
+
+Access the application through your browser at `http://localhost:8000`.
+
+To start the development server, run in `client` folder:
 
 ```bash
 npm start
 ```
 
 Access the application through your browser at `http://localhost:3000`.
+
 
 ## Our Products
 
@@ -73,4 +82,6 @@ Users can proceed to the cart to review their selected items. The cart displays 
 
 Upon clicking the "Place Order" button, a form opens for users to enter their information and confirm the order. Order data is stored in the database for administrative processing.
 
-For any further assistance or inquiries, please contact [contact email].
+## Orders frm DataBase
+
+The manager or another person can view the list of orders using the link `/ordersPage`
